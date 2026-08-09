@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auth-traffic-auditor"
+version = "0.1.0"
+description = "Outil modulaire de test d'authentification et de trafic réseau, mappé ISO 27001"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "scapy",
+]
+
+[project.optional-dependencies]
+lab = ["flask"]
+
+
+
+
+
+[project.scripts]
+auth-traffic-auditor = "auth_traffic_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["auth_traffic_auditor*"]
