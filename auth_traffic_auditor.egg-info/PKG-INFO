@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: auth-traffic-auditor
+Version: 0.1.0
+Summary: Outil modulaire de test d'authentification et de trafic réseau, mappé ISO 27001
+Requires-Python: >=3.10
+Requires-Dist: requests
+Requires-Dist: scapy
+Provides-Extra: lab
+Requires-Dist: flask; extra == "lab"
