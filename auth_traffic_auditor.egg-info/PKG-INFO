@@ -7,3 +7,5 @@ Requires-Dist: requests
 Requires-Dist: scapy
 Provides-Extra: lab
 Requires-Dist: flask; extra == "lab"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

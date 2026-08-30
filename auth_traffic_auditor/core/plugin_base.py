@@ -14,6 +14,7 @@ class AttackResult:
 class AttackModule(ABC):
     name: str = "unnamed"
     iso_controls: tuple[str, ...] = ()
+    requires_confirmation: bool = False
 
     @abstractmethod
     def run(self, target: str, **kwargs: Any) -> AttackResult:

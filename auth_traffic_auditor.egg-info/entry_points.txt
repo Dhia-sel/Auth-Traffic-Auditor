@@ -1,2 +1,3 @@
 [console_scripts]
+ata = auth_traffic_auditor.cli:main
 auth-traffic-auditor = auth_traffic_auditor.cli:main

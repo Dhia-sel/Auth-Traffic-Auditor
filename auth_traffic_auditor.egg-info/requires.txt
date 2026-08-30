@@ -1,5 +1,8 @@
 requests
 scapy
 
+[dev]
+pytest
+
 [lab]
 flask

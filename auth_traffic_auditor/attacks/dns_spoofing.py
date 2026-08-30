@@ -30,6 +30,7 @@ def _is_root() -> bool:
 class DnsSpoofingModule(AttackModule):
     name = "dns_spoofing"
     iso_controls = ("A.13",)
+    requires_confirmation = True
 
     def run(
         self,

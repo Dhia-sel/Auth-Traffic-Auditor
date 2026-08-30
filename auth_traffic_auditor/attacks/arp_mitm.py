@@ -37,6 +37,7 @@ def _is_root() -> bool:
 class ArpMitmModule(AttackModule):
     name = "arp_mitm"
     iso_controls = ("A.13",)
+    requires_confirmation = True
 
     def run(
         self,

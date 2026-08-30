@@ -53,6 +53,7 @@ def _extract_credentials(payload: bytes) -> list[dict[str, str]]:
 class SniffingModule(AttackModule):
     name = "sniffing"
     iso_controls = ("A.13",)
+    requires_confirmation = True
 
     def run(
         self,

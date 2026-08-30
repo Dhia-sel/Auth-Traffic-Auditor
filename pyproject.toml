@@ -22,6 +22,7 @@ dev = ["pytest"]
 
 [project.scripts]
 auth-traffic-auditor = "auth_traffic_auditor.cli:main"
+ata = "auth_traffic_auditor.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["auth_traffic_auditor*"]
