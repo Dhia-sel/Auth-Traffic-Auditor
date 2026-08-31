@@ -10,10 +10,6 @@ from ..core.registry import register
 logger = logging.getLogger(__name__)
 DEFAULT_PORTS = [21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 3306, 3389, 5432, 6379, 8080, 8443]
 def _grab_banner(host: str, port: int, timeout: float) -> str | None:
-    """Tente de lire une bannière applicative sur un port déjà ouvert.
-    Certains services l'envoient sans rien demander (SSH, FTP), d'autres
-    ne répondent qu'après une requête minimale (HTTP).
-    """
     try:
         with socket.create_connection((host, port), timeout=timeout) as sock:
             sock.settimeout(timeout)
